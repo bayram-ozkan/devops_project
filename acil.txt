@@ -1,0 +1,10 @@
+17.adım: projelerimizi pushlama yaparken acil.txt adında bir iş geldi ve bu iş öncelik olduğu söylendi var olan add yapılmış dosyalarımızı commitleme yapmadan özel bir alanda saklama yapalım tabi bunu git stash ile yapalım.
+
+stash adı araf olsun
+
+acil.txt işimizi bitirdik bunu pushladık
+
+stash araf adındaki stash çağırıp işleyip ve sonrasında silelim.
+
+
+acil iş
