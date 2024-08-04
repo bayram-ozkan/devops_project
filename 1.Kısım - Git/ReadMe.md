@@ -86,10 +86,13 @@ Listelemek için
 git config --global --list
 ```
 
+---
+
 6.Adım: Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
 ---
 
 ![text](<../images/6.png>)
+
 ---
 
 7.Adım: Git staged area ve unstaged area nedir ?
@@ -100,12 +103,14 @@ Staged Area
 
 
 Unstaged Area
- > Çalışma dizinindeki ve staged area daki değişiklikler arasında bulunan alandır. Bu aşama, henüz staged area ya eklenmemiş, dolayısıyla commit işlemine dahil edilmemiş değişiklikleri içerir.!
+ > Çalışma dizinindeki ve staged area daki değişiklikler arasında bulunan alandır. Bu aşama, henüz staged area ya eklenmemiş, dolayısıyla commit işlemine dahil edilmemiş değişiklikleri içerir.
+
 ---
 
 
 8.Adım: Bu dizindeki dosyaları oluşturduğumuz github repository gönderelim. NOT: main adında branch oluşturalım.
 ---
+
 ```
 git add.
 ```
@@ -128,6 +133,7 @@ git push -u origin master
 
 ![text](<../images/8.png>)
 
+---
 
 9.Adım: Oluşturduğumuz github repository local bilgisarımızda bir yere clone yapalım.
 ---
@@ -136,11 +142,13 @@ git push -u origin master
 git clone https://github.com/nakzoo/devops_project.git
 ```
 
+---
+
 10.Adım: En son commitimizin commit içeriğini değiştirilelim.
 ---
-![text](<../images/10.png>)
 
 
+---
 
 11.Adım: Git log ve Git status ne iş yapıyordu ?
 ---
@@ -151,11 +159,17 @@ Git log
 Git status
 >Mevcut Git deposunun durumunu gösterir. Çalışma Dizinindede ve staging area da  yapılan değişlikleri listeler ve hangi dosyaların takip edilip eğilmediğini, hangi değişikliklerin stage edilip edilmediğini gösterir.
 
+![text](<../images/10.png>)
+
+
+---
 
 12.Adım: backend adında branch oluşturalım. bu branche bir takım dizinler ekleyelim. commit yapalım. merge işleminde fast-forward kullanalım.
 ---
 
-![text](<../images/10.png>)
+![text](<../images/12.png>)
+
+---
 
 13.Adım: Git GUI ve Git CLI nedir ?
 ---
@@ -167,12 +181,14 @@ GUI (Graphics User Interface)
 CLI (Commond Line Interface)
 > Komut satırı üzerinden Git komutlarını girerek Git işlemlerini gerçekleştirmeyi ifade eder. Git'in en temel ve güçlü kullanım şeklidir.
 
+---
 
 14.Adım: frontend adında branch oluşturalım. bu branche bir takım dizinler ekleyelim. commit yapalım. merge işleminde no-fast-forward kullanalım.
 ---
 
 ![text](<../images/14.png>)
 
+---
 
 15.Adım: Başka bir github repository açalım ve bu sefer derste öğrendiğimiz SSH-KEY ile github veri gönderme yapalım.
 Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
@@ -180,6 +196,12 @@ Ssh-keygen-trsa-b4096-C«hamitmizrak@gmail.com»
 ---
 
 16.Adım: Git stash nedir?
+---
+
+Çalışma dizininde yaptığınız değişiklikleri geçici olarak kaydederek,çalışma dizinini temiz hale getirir ve değişiklikleri ileride geri almak üzere saklar. 
+Bu komut, henüz commit yapmak istemediğiniz değişiklikleri kaydetmek ve farklı bir branch e geçmek ya da başka bir iş yapmak için kullanışlıdır.
+Stash öncesi mutlaka " git add . " yapılmalıdır.
+
 ---
 
 17.Adım: projelerimizi pushlama yaparken acil.txt adında bir iş geldi ve bu iş öncelik olduğu söylendi var olan add yapılmış dosyalarımızı commitleme yapmadan özel bir alanda saklama yapalım.
@@ -191,8 +213,9 @@ Tabi bunu git stash ile yapalım.
  acil.txt işimizi bitirdik bunu pushladık
 stash araf adındaki stash çağırıp işleyip ve sonrasında silelim.
 
-
 ![text](<../images/17.png>)
+
+---
 
 18.Adım: git log --all --oneline --decorate --graph komutunu graph adından alias kullanarak kısaltalım
 ---
@@ -205,14 +228,33 @@ SONRASI
 
 ![text](<../images/18.2.png>)
 
+---
+
 19.Adım: Rebesa ile merge arasındaki fark nedir ?
 ---
 git merge
 > İki dalı birleştirir ve ayrı bir merge commit i oluşturur. Geçmişi izlemek kolaydır, ancak commit geçmişi karmaşık olabilir.
 
 git rebase
-> Bir dalı başka bir dalın tabanına yeniden konumlandırır. Geçmişi temiz ve doğrusal yapar, ancak paylaşılan branch lerde dikkatli kullanılmalıdı
+> Bir dalı başka bir dalın tabanına yeniden konumlandırır. Geçmişi temiz ve doğrusal yapar, ancak paylaşılan branch lerde dikkatli kullanılmalıdır.
 
+## Git Merge ve Rebase Karşılaştırması
+
+| Özellik                | `git merge`                                            | `git rebase`                                            |
+|------------------------------|--------------------------------------------------------|---------------------------------------------------------|
+| **Temel İşlev**        | İki branşı birleştirir ve yeni bir commit oluşturur. | İki branşı birleştirir, ancak commit geçmişini değiştirir. |
+| **Commit Geçmişi**     | Commit geçmişini korur, yeni bir "merge commit" oluşturur. | Commit geçmişini yeniden yazar, daha düz bir tarih oluşturur. |
+| **Commitler**          | Mevcut commitlerin üzerine yeni bir commit ekler.  | Mevcut commitleri yeniden uygulayarak commit geçmişini değiştirir. |
+| **Yapay Commit**       | Bir "merge commit" oluşturur.                      | Merge commit oluşturmaz, commitler yeniden uygulanır. |
+| **Conflict Çözümü**    | Merge çatışmaları oluşursa, çözümleri `merge commit` ile kaydeder. | Rebase sırasında oluşan çatışmalar commit başına çözülür. |
+| **Tarih Düzeni**       | Commit geçmişinde yan dallar ve birleştirme işlemleri görünür. | Daha temiz ve sıralı bir commit geçmişi sağlar. |
+| **Kullanım Durumları** | Genellikle büyük projelerde, birden fazla dalın birleştirilmesi için kullanılır. | Özellikle küçük veya kişisel projelerde, tarih düzenini korumak için kullanılır. |
+
+
+
+
+
+---
 
 20.Adım: Git Conflict nedir ? Bir conflict yediğimizde ne yapmamız gerekiyor ?
 ---
@@ -227,27 +269,31 @@ Bir conflict yediğimizde:
  > * git rebase main
  > * git stash apply stash@{0}
 
-
-
+---
 
 21.Adım: git ignore nedir ?
 ---
 > Git deposunda takip edilmemesi gereken dosya ve dizinleri belirtmek için kullanılır. Bu dosya, hangi dosyaların Git tarafından izlenmeyeceğini tanımlar.
 
+---
 
 22.Adım: git tag v1.1 ? Bu komu ne iş yapar ?
 ---
 
 > Belirli bir noktadaki proje durumunu işaretlemek için kullanılan bir referanstır. Etiketler genellikle sürüm numaralarını belirtmek için kullanılır
 
-
+---
 
 
 23.Adım: git diff 3b2f0ab 5a2b8de bu komu ne iş yapar ? 
+---
+
 > [!NOTE]
 > 3b2f0ab 5a2b8de commit numarası
 
+> Belirtilen iki commit arasındaki farklılıkları gösterir.
 
+---
 
 
 
