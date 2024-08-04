@@ -78,12 +78,22 @@ VSC(Version control system)
 
 ---
 
-5.1.   Adım: Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
+5.1.Adım: Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
 ---
 
-
----
 ![text](<../images/5.2 git.png>)
+
+---
+
+5.2 -  Git user.name, user.email ayarlarınını yapalım
+---
+![text](<../images/5.1.user-email.png>)
+
+Listelemek için
+
+```
+git config --global --list
+```
 
 ---
 
