@@ -1,1 +1,1 @@
-# devops_project
+# TECHCAREER DEVOPS BİTİRME PROJESİ
