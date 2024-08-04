@@ -126,12 +126,20 @@ git remote add origin https://github.com/nakzoo/devops_project.git
 git push -u origin master
 ```
 
+![text](<../images/8.png>)
+
 
 9.Adım: Oluşturduğumuz github repository local bilgisarımızda bir yere clone yapalım.
 ---
 
+```
+git clone https://github.com/nakzoo/devops_project.git
+```
+
 10.Adım: En son commitimizin commit içeriğini değiştirilelim.
 ---
+
+
 
 11.Adım: Git log ve Git status ne iş yapıyordu ?
 ---
