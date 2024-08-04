@@ -43,7 +43,7 @@ sudo apt-get install mnv
 ---
 
 
-3.adım: Port ayarları her bir uygulama için farklı portta olduğununda emin olalım
+3.adım: Port ayarları her bir uygulama için farklı portta olduğununda emin olalım.
 ---
 
 ```
@@ -54,7 +54,7 @@ sudo netstat -nlptu
 
 ---
 
-4.Adım: GitHub -> repository den   devops_project adında bir repository açalım. GitHub repository ReadMe.md adında dosya oluşturup uygun formatta yazalım sonrasında local bilgisayarımızda pull yapalım
+4.Adım: GitHub -> repository den   devops_project adında bir repository açalım. GitHub repository ReadMe.md adında dosya oluşturup uygun formatta yazalım sonrasında local bilgisayarımızda pull yapalım.
 ---
 
 5.Adım: Git nedir ? VCS açılımı nedir? İyi bir commit özelliklkeri nelerdir?
@@ -67,20 +67,20 @@ VSC(Version control system)
   > Dosyaların değişiklerini takip eden ve birden fazla kullanıcı arasında koordinasyonu sağlayan bir yazılım aracıdır. Versiyon kontrol sistemleri , projelerdeki değişiklerin izlenmesi, geri alınması ve birden fazla srümün yönetilmesini kolaylaştırır.
 
 İyi Bir Commit Mesajı İçin 7 Kural
-> * Commit mesajının başlığını ve içeriğini birbirinden ayırın
-> * Başlığı 50 karakterle sınırlayın
-> * Başlığa büyük harfle başlayın
-> * Başlığı nokta ile bitirmeyin
-> * Başlıkta emir kipi kullanın
-> * İçeriği 72 karakter ile sınırlandırın
-> * İçeriği ne, neden, nasıl sorularını cevaplayacak şekilde oluşturun
+> * Commit mesajının başlığını ve içeriğini birbirinden ayırın.
+> * Başlığı 50 karakterle sınırlayın.
+> * Başlığa büyük harfle başlayın.
+> * Başlığı nokta ile bitirmeyin.
+> * Başlıkta emir kipi kullanın.
+> * İçeriği 72 karakter ile sınırlandırın.
+> * İçeriği ne, neden, nasıl sorularını cevaplayacak şekilde oluşturun.
 ---
 
-5.2.Adım: Git user.name, user.email ayarlarınını yapalım
+5.2.Adım: Git user.name, user.email ayarlarınını yapalım.
 ---
 ![text](<../images/5.1.user-email.png>)
 
-Listelemek için
+ Git in global yapılandırma ayarlarını listelemek için :
 
 ```
 git config --global --list
@@ -88,14 +88,14 @@ git config --global --list
 
 ---
 
-6.Adım: Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
+6.Adım: Linux komutları kullanarak 'devops' adında bir dizin ve 'jenkins.txt' adında bir dosya oluşturalım ve dosyaya 'DevOps öğreniyorum' yazalım.
 ---
 
 ![text](<../images/6.png>)
 
 ---
 
-7.Adım: Git staged area ve unstaged area nedir ?
+7.Adım: Git staged area ve unstaged area nedir?
 ---
 
 Staged Area
@@ -147,6 +147,12 @@ git clone https://github.com/nakzoo/devops_project.git
 10.Adım: En son commitimizin commit içeriğini değiştirilelim.
 ---
 
+```
+git commit --amend -m "son commit düzeltme"
+```
+
+![text](<../images/10.png>)
+
 
 ---
 
@@ -159,7 +165,7 @@ Git log
 Git status
 >Mevcut Git deposunun durumunu gösterir. Çalışma Dizinindede ve staging area da  yapılan değişlikleri listeler ve hangi dosyaların takip edilip eğilmediğini, hangi değişikliklerin stage edilip edilmediğini gösterir.
 
-![text](<../images/10.png>)
+![text](<../images/11.png>)
 
 
 ---
@@ -171,7 +177,7 @@ Git status
 
 ---
 
-13.Adım: Git GUI ve Git CLI nedir ?
+13.Adım: Git GUI ve Git CLI nedir?
 ---
 
 GUI (Graphics User Interface)
@@ -204,20 +210,20 @@ Stash öncesi mutlaka " git add . " yapılmalıdır.
 
 ---
 
-17.Adım: projelerimizi pushlama yaparken acil.txt adında bir iş geldi ve bu iş öncelik olduğu söylendi var olan add yapılmış dosyalarımızı commitleme yapmadan özel bir alanda saklama yapalım.
+17.Adım: Projelerimizi pushlama yaparken acil.txt adında bir iş geldi ve bu iş öncelik olduğu söylendi var olan add yapılmış dosyalarımızı commitleme yapmadan özel bir alanda saklama yapalım.
 ---
 
 > [!NOTE]
 Tabi bunu git stash ile yapalım. 
- Stash adı araf olsun
- acil.txt işimizi bitirdik bunu pushladık
+Stash adı araf olsun.
+acil.txt işimizi bitirdik bunu pushladık.
 stash araf adındaki stash çağırıp işleyip ve sonrasında silelim.
 
 ![text](<../images/17.png>)
 
 ---
 
-18.Adım: git log --all --oneline --decorate --graph komutunu graph adından alias kullanarak kısaltalım
+18.Adım: git log --all --oneline --decorate --graph komutunu graph adından alias kullanarak kısaltalım.
 ---
 
 ÖNCESİ
@@ -228,9 +234,17 @@ SONRASI
 
 ![text](<../images/18.2.png>)
 
+
+Git yapılandırmasında tanımlı olan tüm alias ayarlarını listelemek için: 
+
+```
+git config --get-regexp alias
+```
+
+
 ---
 
-19.Adım: Rebesa ile merge arasındaki fark nedir ?
+19.Adım: Rebesa ile merge arasındaki fark nedir?
 ---
 git merge
 > İki dalı birleştirir ve ayrı bir merge commit i oluşturur. Geçmişi izlemek kolaydır, ancak commit geçmişi karmaşık olabilir.
@@ -256,7 +270,7 @@ git rebase
 
 ---
 
-20.Adım: Git Conflict nedir ? Bir conflict yediğimizde ne yapmamız gerekiyor ?
+20.Adım: Git Conflict nedir ? Bir conflict yediğimizde ne yapmamız gerekiyor?
 ---
 > İki farklı değişiklik aynı dosyanın aynı bölgesinde yapıldığında meydana gelir. Çakışmalar, Git in hangi değişikliklerin  korunacağına karar verememesi durumunda oluşur ve manuel olarak çözülmesi gerekir.
 
@@ -271,21 +285,21 @@ Bir conflict yediğimizde:
 
 ---
 
-21.Adım: git ignore nedir ?
+21.Adım: git ignore nedir?
 ---
 > Git deposunda takip edilmemesi gereken dosya ve dizinleri belirtmek için kullanılır. Bu dosya, hangi dosyaların Git tarafından izlenmeyeceğini tanımlar.
 
 ---
 
-22.Adım: git tag v1.1 ? Bu komu ne iş yapar ?
+22.Adım: git tag v1.1 ? Bu komu ne iş yapar?
 ---
 
-> Belirli bir noktadaki proje durumunu işaretlemek için kullanılan bir referanstır. Etiketler genellikle sürüm numaralarını belirtmek için kullanılır
+> Belirli bir noktadaki proje durumunu işaretlemek için kullanılan bir referanstır. Etiketler genellikle sürüm numaralarını belirtmek için kullanılır.
 
 ---
+ 
 
-
-23.Adım: git diff 3b2f0ab 5a2b8de bu komu ne iş yapar ? 
+23.Adım: git diff 3b2f0ab 5a2b8de bu komu ne iş yapar? 
 ---
 
 > [!NOTE]
