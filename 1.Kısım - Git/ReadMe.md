@@ -106,6 +106,25 @@ Unstaged Area
 
 8.Adım: Bu dizindeki dosyaları oluşturduğumuz github repository gönderelim. NOT: main adında branch oluşturalım.
 ---
+```
+git add.
+```
+
+```
+git commit -m "fist commit"
+```
+
+```
+git branch -M "main"
+```
+
+```
+git remote add origin https://github.com/nakzoo/devops_project.git
+```
+
+```
+git push -u origin master
+```
 
 
 9.Adım: Oluşturduğumuz github repository local bilgisarımızda bir yere clone yapalım.
