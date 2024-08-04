@@ -138,22 +138,41 @@ git clone https://github.com/nakzoo/devops_project.git
 
 10.Adım: En son commitimizin commit içeriğini değiştirilelim.
 ---
+![text](<../images/10.png>)
 
 
 
 11.Adım: Git log ve Git status ne iş yapıyordu ?
 ---
 
+Git log
+> Git deposundaki commit geçmişini görüntülemek için kullanılır. Yapılan commit ler hakkında ayrıntılı bilgiler sağlar ve  commit mesajları, tarih, yazar bilgileri gibi önemli detayları içerir.
+
+Git status
+>Mevcut Git deposunun durumunu gösterir. Çalışma Dizinindede ve staging area da  yapılan değişlikleri listeler ve hangi dosyaların takip edilip eğilmediğini, hangi değişikliklerin stage edilip edilmediğini gösterir.
+
+
 12.Adım: backend adında branch oluşturalım. bu branche bir takım dizinler ekleyelim. commit yapalım. merge işleminde fast-forward kullanalım.
 ---
 
+![text](<../images/10.png>)
 
 13.Adım: Git GUI ve Git CLI nedir ?
 ---
 
+GUI (Graphics User Interface)
+> Git işlemlerini görsel bir arayüz aracılığıyla gerçekleştirmenizi sağlar. GUI araçları, Git komutlarını grafiksel butonlar ve menüler aracılığıyla kullanmanıza olanak tanır.
+
+
+CLI (Commond Line Interface)
+> Komut satırı üzerinden Git komutlarını girerek Git işlemlerini gerçekleştirmeyi ifade eder. Git'in en temel ve güçlü kullanım şeklidir.
+
 
 14.Adım: frontend adında branch oluşturalım. bu branche bir takım dizinler ekleyelim. commit yapalım. merge işleminde no-fast-forward kullanalım.
 ---
+
+![text](<../images/14.png>)
+
 
 15.Adım: Başka bir github repository açalım ve bu sefer derste öğrendiğimiz SSH-KEY ile github veri gönderme yapalım.
 Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
@@ -173,21 +192,55 @@ Tabi bunu git stash ile yapalım.
 stash araf adındaki stash çağırıp işleyip ve sonrasında silelim.
 
 
+![text](<../images/17.png>)
+
 18.Adım: git log --all --oneline --decorate --graph komutunu graph adından alias kullanarak kısaltalım
 ---
 
+ÖNCESİ
+
+![text](<../images/18.1.png>)
+
+SONRASI
+
+![text](<../images/18.2.png>)
+
 19.Adım: Rebesa ile merge arasındaki fark nedir ?
 ---
+git merge
+> İki dalı birleştirir ve ayrı bir merge commit i oluşturur. Geçmişi izlemek kolaydır, ancak commit geçmişi karmaşık olabilir.
+
+git rebase
+> Bir dalı başka bir dalın tabanına yeniden konumlandırır. Geçmişi temiz ve doğrusal yapar, ancak paylaşılan branch lerde dikkatli kullanılmalıdı
+
 
 20.Adım: Git Conflict nedir ? Bir conflict yediğimizde ne yapmamız gerekiyor ?
 ---
+> İki farklı değişiklik aynı dosyanın aynı bölgesinde yapıldığında meydana gelir. Çakışmalar, Git in hangi değişikliklerin  korunacağına karar verememesi durumunda oluşur ve manuel olarak çözülmesi gerekir.
+
+Bir conflict yediğimizde: 
+
+ > * git add . 
+ > * git stash
+ > * git checkout main
+ > * git pull
+ > * git rebase main
+ > * git stash apply stash@{0}
+
+
+
 
 21.Adım: git ignore nedir ?
 ---
+> Git deposunda takip edilmemesi gereken dosya ve dizinleri belirtmek için kullanılır. Bu dosya, hangi dosyaların Git tarafından izlenmeyeceğini tanımlar.
 
 
 22.Adım: git tag v1.1 ? Bu komu ne iş yapar ?
 ---
+
+> Belirli bir noktadaki proje durumunu işaretlemek için kullanılan bir referanstır. Etiketler genellikle sürüm numaralarını belirtmek için kullanılır
+
+
 
 
 23.Adım: git diff 3b2f0ab 5a2b8de bu komu ne iş yapar ? 
