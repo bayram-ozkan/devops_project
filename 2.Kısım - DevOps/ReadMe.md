@@ -97,29 +97,54 @@
      >Java bytecode unu yürüten bir yazilim motorudur. Java programlarını platformdan bağımsız bir şekilde çalıştırır. JRE nin bir parçasıdır.
 
 
-
-
-
-
 ---
+
 
 31.Adım: Maven nedir? maven de clean install görevi nedir?
 ---
 
+  > Java platformlarında proje yönetim ve inşa aracıdır. Projelerin yapılandırmasını, derlemesini, paketlemesini ve bağımlılık yönetimini otomatikleştirir. 
 
+```
+mvn clean package -DskipTest
+```
+
+ * Clean: Önceki derleme sonuçlarını ve geçici dosyaları temizler. Derleme sırasında oluşan target klasöründeki tüm dosyaları siler.
+ 
+ * Install: Bir projeyi derleyip test ettikten sonra, projeyi yerel Maven deposuna (.m2/repository) yükler. Bu sayade projenizin derlenmiş çıktılarının ve bağımlılıklarının yerel sistemde kullanılabilir olmasını sağlar.
+
+---
 
 32.Adım: Docker nedir ? Docker Daemon, Docker CLI ne iş yapıyor ?
 ---
+
+  > Docker, konteynerleştirme teknolojisini kullanarak uygulamaların ve onların bağımlılıklarının taşınabilir, izole edilmiş ortamlar içinde çalıştırılmasını sağlar. Docker, geliştiricilerin uygulamalarını bir "container" içinde paketlemelerine ve bu konteynerleri herhangi bir ortamda çalıştırmalarına olanak tanır. Bu sayede, uygulama her yerde aynı şekilde çalışır, böylece "çalışıyor ama benim bilgisayarımda" sorunu ortadan kalkar.
+
+
+Docker Daemon
+
+> Docker'ın temel bileşenlerinden biridir ve Docker container  ve image ların  yönetimini sağlayan bir arka plan hizmetidir. Docker istemcisi ile Docker Daemon arasında bir REST API aracılığıyla iletişim kurulur. Docker Daemon genellikle bir sistem hizmeti olarak çalışır ve yapılandırılabilir.
+
+Docker CLI (Commond Line Interface)
+
+> Komut satırı üzerinden Docker işlemlerini gerçekleştirmek için kullanılır.Bu sayede kullanıcılar Docker Daemon ile etkileşimde bulunarak  Docker container larını ve image larını  yönetebilir. Docker CLI, kapsamlı komut seti ve otomasyon yetenekleriile Docker ekosisteminin temel bileşenlerinden biridir.
 
 ---
 
 
 33.Adım: Aşağıdaki adımları teker teker yazalım?
 --- 
-  >34.adım: -docker search nginx
+* 34.Adım:
+  ```
+  docker search nginx  
+  ```
+  > Dockerhub  da  "nginx" adında imagı arar ve arama sonuçlarını detaylı şekilde listeler
+
+
+
   ---
-  > 35.adım: -docker pull nginx
-  ---
+* 35.adım: -docker pull nginx
+
 
 ---
   
