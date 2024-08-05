@@ -25,36 +25,79 @@
 
 27.Adım: DevOpsYöntemlerindengitnedir?
 ---
-  >Git (global information tracked) ücretsiz ve  dağıtık bir versiyon kontrol  yönetim  sistemidir.
-
+  > Git (global information tracked) ücretsiz ve  dağıtık bir versiyon kontrol  yönetim  sistemidir.
 
 ---
+
 
 28.Adım: DevOps yöntemlerinden  Agile nedir? 
 ---
-
+  > Agile ve DevOps, yazılım geliştirmenin tüm yönlerine verimlilik ve öngörülebilirlik katan iki tamamlayıcı uygumadır.Agile metodoloji iş birliğine, hızlı yazılım               sürümlerine ve müşteri geri bildirimine odaklanan yinelemeleli bir yazılım geliştirme yaklaşımıdır.
 
 ----
 
 
-
 29.Adım: DevOps Continues monitoring nedir?
+---
+  > DevOps süreçlerinde uygulama ve sistemlerin performansını, güvenliğini ve sürekliliğini takip etmeyi eder. Bu süreçte herhangi bir sorun tespit edilip hızlı bir şekilde       çözülmesi sağlanır.
+
 ---
 
 30.Adım: Aşağıdaki içeriklerin açılımları ve neolduğunu yazalım?
 ---
 
-  > XML nedir?
+* XML nedir?
 
-  > JSON nedir?
+  **XML(Extensible Markup Language)
+  
+  > Genişletilebilir İşaretleme dili, hem insanlar hem de bilgisayar sistemleri tarafından kolayca okunabilen belgeler oluşturmak için kullanılan bir metin  işaretleme           dilidir.  Veri yapılarının ve veri içeriklerinin tanınmmlanması için bir standart sağlar.
 
-  > Yaml nedir?
+* JSON nedir?
+ 
+   **JSON(JavaScript Object Notation)
+  
+  > Basit veri yapılarını temsil etmek için tasarlanmış hem insanlar hem de bilgisayar sistemleri tarafından okunabilen  bağımsız bir veri değişim formatıdır.JavaScript;         nesne gösterimi, anahtar/değer çiftlerine ve sıralı listelere dayanan yapılandırılmış verilerin şemasız, metin tabanlı bir temsilidir.
 
-  > http nedir
 
-  > Server nedir?
+* Yaml nedir?
+ 
+    **YAML(Yet Another Multicolumn Layout)
 
-  > Java JDK,JRE,JVM nedir?
+  > Hem insan tarafından kolaylıkla okunabilen hemde sayısal olarak kolaylıkla işleme alınabilen ve tüm progamlama dilleri tarafından kullanılabilen  bir veri serileştirme  dilidir.
+
+* http nedir?
+
+  **HTTP(Hypertext Transfer Protocol)
+  
+  > İnternet üzerinde veri iletilmesi sağlayan bir protoldür.Web tarayıcıları ile web sunucuları arasında veri alışver,i, sağlar. HTTP, istemci-sunucu mimarisi temelinde         çalışır.
+
+
+* Server nedir?
+
+  **Server(Sunucu)
+
+   > Bilgisayar ağı üzerinden diğer cihazlara hizmetlere, veriler veya kaynaklar sağlayan merkezi bir bilgisayardır. Sunucular, istemcilerden gelen istekleri işler ve bu           isteklere göre yanıtlar gönderir.
+    
+
+  
+
+* Java JDK,JRE,JVM nedir?
+
+    **JDK(Java Development Kit)
+  
+    >Java uygulamalarını geliştirmek için kullanılan bir gereken tüm raçları içeren  geliştirme ortamıdır.JRE ve API ler gibi programlama araçlarını içerir. Java kodu için belge oluşturmak için kullanılan Javadoc gibi diğer geliştirme araçlarını da içerir.
+
+
+    **JRE(Java Runtime Enviroment )
+  
+     >Java uygulamasının yürütülmesini destekleyen yazılım araçları ve kitaplıkları içeren sanal bir ortamdır. JRE, Java programlarını ve uygulamarıını  yürütülmek üzere JVM        ye yüklemekten sorumludur. JDK nin bir parçasıdır.
+
+    **JVM(Java Vitrual Machine)
+   
+     >Java bytecode unu yürüten bir yazilim motorudur. Java programlarını platformdan bağımsız bir şekilde çalıştırır. JRE nin bir parçasıdır.
+
+
+
 
 
 
