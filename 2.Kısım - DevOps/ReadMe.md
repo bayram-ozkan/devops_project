@@ -176,13 +176,13 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
 37.Adım: Bu github adresindeki veriyi github ile clone yapalım. ve yapılacakları aşağıda yazılmıştır.
 ---
-  > git clone URL_ADDRESS
+  * git clone URL_ADDRESS
 
-  > Bu JAR dosyasının Dockerfile ve docker-compose.yml yazarak image oluşturalım.
+  * Bu JAR dosyasının Dockerfile ve docker-compose.yml yazarak image oluşturalım.
 
-  > Bu oluşturduğunuz image kendi dockerHub'ta repository'a pushlayalım.
+  * Bu oluşturduğunuz image kendi dockerHub'ta repository'a pushlayalım.
 
-  > Kendi repository gönderdiğiniz bu image docker pull … diyerek tekrardan local bilgisayarına veriyi alalım
+  * Kendi repository gönderdiğiniz bu image docker pull … diyerek tekrardan local bilgisayarına veriyi alalım
 
 ---
 
@@ -219,10 +219,12 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 * CD (Continuous Deliver/Continuous Deployment)
   
   **Continuous Delivery(Sürekli  Teslimat)
+  
   > Derleme aşamasından sonra tüm kod değişiklerini otomatik olarak bir test ve/veya üretim ortamına dağıttığı için continuous integration bir uzantıdır.Genellikle bir insan onayı gereklidir.
 
 
   **Continuous Deployment(Sürekli Dağıtım)
+  
   > Sürekli teslimattan bir adım daha ileri gider. Bu uygulamayla üretim hattındaki tüm  aşamalarını geçen her değişiklikler yayınlanır.İnsan müdahalesi yoktur ve yalnızca başarısız bir test yeni bir değişikliğin üretime dağılmasını engeller.
 
 ---
@@ -230,10 +232,16 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 43.adım: GitLab Runner nedir ?
 ---
 
+  > GitLab CI/CD  ile  oluşturduğumuz job ları çalıştırmak ve çıktılarını  GitLab a geri göndermek için kullanılan open source bir bileşendir. Çeşitli ortam ve platformlarda çalışabilir ve işlerin 
+otomatik  olarak yönetilmesini sağlarken, yapılandırılabilir ve özelleştirilebilir olmasıyla iş akışlarının kolaylaştırılasını sağlar.
+
 ---
 
 44.Adım: SSH nedir ?
 ---
+
+   SSH(Secure Shell)
+  >  Bilgisayar ve sunucu arasındaki güvenli bağlantının oluşmasını sağlayan bir protokoldür.Özellikle  şifreli bir bağlantı sağlayarak, uzak  bir sunucuya veya cihaza güvenli bir şekilde bağlanmanıza  ve komutlar çalıştırmanızı sağlar.
 
 ---
 
@@ -244,6 +252,14 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
 46.Adım: Prometheus nedir, Jenkins nedir ?
 ---
+Prometheus
+
+  > Sistemlerin ve uygulamaların performansını izlemek, verileri analiz etmek ve sorunları erken tespit etmek içi kullanılan, go diliyle geliştirilmiş bir izleme (monitoring) ve uyarı (alerting) sistemidir.
+
+
+Jenkins
+  
+  > Yazılım geliştirme süreçlerinde sürekli entegrasyon ve sürekli dağıtım (CI/CD) süreçlerini otomatikleştiren   java dilinde yazılmış açık kaynaklı bir  araçtır. Tekrarlayan görevleri otomatikleştirerek uygulama geliştirme, test etme ve dağıtma süreçlerini hızlı ve güvenilir bir şekilde gerçekleştirmeyi sağlar.
 
 ---
 
