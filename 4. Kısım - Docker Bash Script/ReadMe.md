@@ -1,4 +1,6 @@
-# Linux'ta çalıştırmak üzere deployment.sh yazıyorsunuz.
+# Docker Bash Script
+
+## Linux'ta çalıştırmak üzere deployment.sh yazıyorsunuz.
 ---
 
 docker-compose.yml ve Dockerfile (daha önceden yaptığımız java uygulamasının dockerize bu bash scriptte ayağa kaldırıyoruz.)
