@@ -1,7 +1,7 @@
 # DevOps
 ## 24- 51 arası sorular
 
-24.Adım: DevOps kültür felsefesi nedir?  DevOps açılımı ?
+24.Adım: DevOps kültür felsefesi nedir? 
 ---
 
   > Geliştirme ve Operasyon ekiplerinin birlikte çalışmasını sağlar. Ortaya çıkan işbirliği, daha hızlı ve daha kaliteli üretimler elde etmeyi amaçlar.DevOps'un araçları ve uygulamaları, böyle bir kültür olmadan çok az fayda sağlayacaktr.  DevOps kültürünün merkezinde işbirliği, sistem düzeyinde düşünme ve geri bildirim döngüleri yer alır. Bu temel unsurlar DevOps'un üretim hızını ve kalitesini sürekli olarak iyileştirmesini sağlar.
@@ -32,14 +32,14 @@
 
 28.Adım: DevOps yöntemlerinden  Agile nedir? 
 ---
-  > Agile ve DevOps, yazılım geliştirmenin tüm yönlerine verimlilik ve öngörülebilirlik katan iki tamamlayıcı uygumadır.Agile metodoloji iş birliğine, hızlı yazılım               sürümlerine ve müşteri geri bildirimine odaklanan yinelemeleli bir yazılım geliştirme yaklaşımıdır.
+  > Agile ve DevOps, yazılım geliştirmenin tüm yönlerine verimlilik ve öngörülebilirlik katan iki tamamlayıcı uygumadır.Agile metodoloji iş birliğine, hızlı yazılım sürümlerine ve müşteri geri bildirimine odaklanan yinelemeleli bir yazılım geliştirme yaklaşımıdır.
 
 ----
 
 
 29.Adım: DevOps Continues monitoring nedir?
 ---
-  > DevOps süreçlerinde uygulama ve sistemlerin performansını, güvenliğini ve sürekliliğini takip etmeyi eder. Bu süreçte herhangi bir sorun tespit edilip hızlı bir şekilde       çözülmesi sağlanır.
+  > DevOps süreçlerinde uygulama ve sistemlerin performansını, güvenliğini ve sürekliliğini takip etmeyi eder. Bu süreçte herhangi bir sorun tespit edilip hızlı bir şekilde çözülmesi sağlanır.
 
 ---
 
@@ -50,13 +50,13 @@
 
   **XML(Extensible Markup Language)
   
-  > Genişletilebilir İşaretleme dili, hem insanlar hem de bilgisayar sistemleri tarafından kolayca okunabilen belgeler oluşturmak için kullanılan bir metin  işaretleme           dilidir.  Veri yapılarının ve veri içeriklerinin tanınmmlanması için bir standart sağlar.
+  > Genişletilebilir İşaretleme dili, hem insanlar hem de bilgisayar sistemleri tarafından kolayca okunabilen belgeler oluşturmak için kullanılan bir metin  işaretleme dilidir.  Veri yapılarının ve veri içeriklerinin tanınmmlanması için bir standart sağlar.
 
 * JSON nedir?
  
    **JSON(JavaScript Object Notation)
   
-  > Basit veri yapılarını temsil etmek için tasarlanmış hem insanlar hem de bilgisayar sistemleri tarafından okunabilen  bağımsız bir veri değişim formatıdır.JavaScript;         nesne gösterimi, anahtar/değer çiftlerine ve sıralı listelere dayanan yapılandırılmış verilerin şemasız, metin tabanlı bir temsilidir.
+  > Basit veri yapılarını temsil etmek için tasarlanmış hem insanlar hem de bilgisayar sistemleri tarafından okunabilen  bağımsız bir veri değişim formatıdır.JSON nesne gösterimi, anahtar/değer çiftlerine ve sıralı listelere dayanan yapılandırılmış verilerin şemasız, metin tabanlı bir temsilidir.
 
 
 * Yaml nedir?
@@ -69,14 +69,14 @@
 
   **HTTP(Hypertext Transfer Protocol)
   
-  > İnternet üzerinde veri iletilmesi sağlayan bir protoldür.Web tarayıcıları ile web sunucuları arasında veri alışver,i, sağlar. HTTP, istemci-sunucu mimarisi temelinde         çalışır.
+  > İnternet üzerinde veri iletilmesi sağlayan bir protoldür.Web tarayıcıları ile web sunucuları arasında veri alışver,i, sağlar. HTTP, istemci-sunucu mimarisi temelinde çalışır.
 
 
 * Server nedir?
 
   **Server(Sunucu)
 
-   > Bilgisayar ağı üzerinden diğer cihazlara hizmetlere, veriler veya kaynaklar sağlayan merkezi bir bilgisayardır. Sunucular, istemcilerden gelen istekleri işler ve bu           isteklere göre yanıtlar gönderir.
+   > Bilgisayar ağı üzerinden diğer cihazlara hizmetlere, veriler veya kaynaklar sağlayan merkezi bir bilgisayardır. Sunucular, istemcilerden gelen istekleri işler ve bu isteklere göre yanıtlar gönderir.
     
 
   
@@ -90,7 +90,7 @@
 
     **JRE(Java Runtime Enviroment )
   
-     >Java uygulamasının yürütülmesini destekleyen yazılım araçları ve kitaplıkları içeren sanal bir ortamdır. JRE, Java programlarını ve uygulamarıını  yürütülmek üzere JVM        ye yüklemekten sorumludur. JDK nin bir parçasıdır.
+     >Java uygulamasının yürütülmesini destekleyen yazılım araçları ve kitaplıkları içeren sanal bir ortamdır. JRE, Java programlarını ve uygulamarıını  yürütülmek üzere JVM  ye yüklemekten sorumludur. JDK nin bir parçasıdır.
 
     **JVM(Java Vitrual Machine)
    
@@ -263,27 +263,48 @@ Jenkins
 
 ---
 
-47.adım: Ansible nedir ?
+47.Adım: Ansible nedir ?
 ---
+  > Python dilinde geliştirilmiş açık kaynaklı bir otomasyon ve yapılandırma yönetimi platformudur. Genellikle sunucuların ve diğer sistemlerin yapılandırılmasını, yazılım dağıtımını ve iş süreçlerinin otomatikleştirilmesini sağlar. Ansible, yapılandırma dosyalarını insan tarafından okunabilir YAML formatında kullanır ve agent -uzak sistemlere yönetim ve izleme komutları göndermek için kullanılan küçük bir yazılım bileşeni - gerektirmeden SSH üzerinden çalışır. Modüler yapısı sayesinde çeşitli görevleri otomatikleştirir ve DevOps süreçlerine entegre edilerek etkin bir otomasyon sağlar.
+
+
+---  
+
+48.Adım: Kubernatesnedir ?
+---
+ Kubernetes (K8s)
+   > konteynerleştirilmiş uygulamaları otomatik olarak dağıtmak, ölçeklemek ve yönetmek için kullanılan açık kaynaklı  bir platformdur. Google tarafından geliştirilen bu sistem, konteynerlerin yönetimini ve orkestrasyonunu basitleştirir ve çeşitli bulut ortamlarında veya yerel sunucularda çalışabilir.
+
 
 ---
 
-48.adım: Kubernatesnedir ?
+49.Adım: Datadog Monitoring nedir ?
 ---
+
+  > bulut tabanlı bir platform olup, modern IT altyapılarının ve uygulamalarının izlenmesi, analizi ve yönetilmesi için kullanılır. Datadog, sunucular, veritabanları, bulut ölçekli uygulamalar ve çeşitli servislerden veri toplar, bu verileri gerçek zamanlı olarak analiz eder ve görselleştirir. Ayrıca, Datadog'un kullanılabilmesi için sunuculara özel bir ajan kurulumu gerekmez; sistemler mevcut bağlantılar üzerinden izlenir ve yönetilir.
+
 
 ---
 
-49.adım: Datadog Monitoring nedir ?
+50.Adım: Kanban nedir ?
 ---
+
+  > Yalın üretim tekniklerinden birisidir ve  üretim süreçlerini yönetmek için kullanılan görsel bir yöntemdir. Japonca kökenli "kanban" kelimesi, "göz" ve "işaret" anlamına gelir ve "görsel işaret" veya "görsel kart" olarak çevrilebilir. Kanban, iş akışını ve üretim sürecini görselleştirir, böylece hangi ürünlerin ne zaman ve ne miktarda üretildiğini kontrol eder. Çekme sistemiyle, iş süreçlerini ve projeleri daha verimli hale getirmek için kullanılan bu yöntem, işlerin düzenli ve verimli bir şekilde yönetilmesini sağlar.
+
 
 ---
 
-50.adım: Kanban nedir ?
+51.Adım: Scrum ve Waterfall nedir ?
 ---
 
----
+Scrum
 
-51.adım: Scrum, Kanban ve waterfall nedir ?
----
+  > Agile  proje yönetim metodolojilerinden biridir. Kompleks yazılım süreçlerinin yönetilmesi için kullanılır. Bunu yaparken bütünü parçalayan; tekrara dayalı bir yöntem izler. Düzenli geri bildirim ve planlamalarla hedefe ulaşmayı sağlar. Bu anlamda ihtiyaca yönelik ve esnek bir yapısı vardır. Müşteri ihtiyacına göre şekillendiği için müşterinin geri bildirimine göre yapılanmayı sağlar. İletişim ve takım çalışması çok önemlidir. 
+
+Waterfall
+
+   > Yazılım geliştirmede yaygın olarak kullanılan geleneksel bir  proje yönetimi metodolojisidir. Bu yöntemde proje, sıralı bir dizi aşamadan oluşur ve her aşama tamamlandıktan  sonra bir sonraki aşamaya geçilir. Adını, her bir aşamanın aşağıdakine "düştüğü" bir şelale metaforundan alır.
+
+
 
 ---
