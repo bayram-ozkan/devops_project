@@ -140,24 +140,37 @@ Docker CLI (Commond Line Interface)
   ```
   > Dockerhub  da  "nginx" adında imagı arar ve arama sonuçlarını detaylı şekilde listeler
 
-
+  ![text](../images/33.png) 
 
   ---
-* 35.adım: -docker pull nginx
+* 35.Adım:
+  ```
+  docker pull nginx
+  ```
+  > Docker Hub dan "nginx"  local makinenize indirir ve kullanıma hazır hale getirir.
 
-
+    ![text](../images/34.png)
+  
 ---
   
 36.Adım: nginx i  aşağıdaki  özelliklere sahip containerlar oluşturulalım. 
 ---
 
-  > 80 portundan 6666 portuna yönlendiren,
+  * 80 portundan 6666 portuna yönlendiren (-p 80:6666),
 
-  > arka planda çalışan(-d)
+  * Arka planda çalışan(-d),
 
-  > yeni adı web_2 (--name)
+  * Yeni adı web_2 (--name),
 
-  > container kapatıldıktan sonra silinen komut (--rm)
+  * Container kapatıldıktan sonra silinen  (--rm).
+
+```
+docker container run -d --rm  --name web_2 -p 6666:80 nginx
+
+```
+ ![text](../images/35.png)
+  
+
 
 ---
 
