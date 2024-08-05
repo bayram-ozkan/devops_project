@@ -204,10 +204,26 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 41.Adım: GitLab nedir ?
 ---
 
+> Web tabanlı bir Git depo yönetim uygulamasıdır. CI/CD (Continuous Integration/Continuos Deployment), hata kayıt, kod gözden geçirme ve viki desteği bulunur. Kapsamlı bir araç seti sunar.
+
+
 ---
 
-42.Adım: GitLab nedir CI/CD nedir ?
+
+42.Adım: CI/CD nedir ?
 ---
+
+* CI (Continuous  Integration)
+  > Sürekli Entegrasyon, yazılım geliştirme süreçlerinde kullanılan bir yaklaşımdır. Kod değişikliklerinin entegrasyonunu otomatikleştirerek yazılım  geliştirme sürecindeki hataları daha erken tespit  etmek ve daha yüksek verimlilik sağlar
+
+* CD (Continuous Deliver/Continuous Deployment)
+  
+  **Continuous Delivery(Sürekli  Teslimat)
+  > Derleme aşamasından sonra tüm kod değişiklerini otomatik olarak bir test ve/veya üretim ortamına dağıttığı için continuous integration bir uzantıdır.Genellikle bir insan onayı gereklidir.
+
+
+  **Continuous Deployment(Sürekli Dağıtım)
+  > Sürekli teslimattan bir adım daha ileri gider. Bu uygulamayla üretim hattındaki tüm  aşamalarını geçen her değişiklikler yayınlanır.İnsan müdahalesi yoktur ve yalnızca başarısız bir test yeni bir değişikliğin üretime dağılmasını engeller.
 
 ---
 
