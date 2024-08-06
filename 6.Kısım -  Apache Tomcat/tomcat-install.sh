@@ -1,27 +1,42 @@
-# Base image olarak OpenJDK'yi kullan
-FROM openjdk:11-jre-slim
+#!/bin/bash
 
-# Tomcat sürümünü ve dosya adını tanımlayın
-ENV TOMCAT_VERSION=10.1.14
-ENV TOMCAT_TAR=apache-tomcat-${TOMCAT_VERSION}.tar.gz
-ENV TOMCAT_URL=https://downloads.apache.org/tomcat/tomcat-10/v${TOMCAT_VERSION}/bin/${TOMCAT_TAR}
 
-# Tomcat'in bulunduğu dizini tanımlayın
-ENV CATALINA_HOME=/opt/tomcat
+# Banner
+echo "***********************************************"
+echo "*                                             *"
+echo "*    TECHCAREER DEVOPS BİTİRME PROJESİ        *"
+echo "*                                             *"
+echo "*   Tomcat kurulum script i çalıştırıldı      *"
+echo "*                                             *"
+echo "*          ******************                 *"
+echo "*                                             *"
+echo "*           BAYRAM OZKAN                      *"
+echo "*                                             *"
+echo "*      https://github.com/nakzoo              *"
+echo "*                                             *"
+echo "***********************************************"
 
-# Gerekli dizinleri oluşturun
-RUN mkdir -p ${CATALINA_HOME}
 
-# Tomcat'i indirin ve çıkarın
-RUN apt-get update && apt-get install -y wget && \
-    wget ${TOMCAT_URL} -O /tmp/${TOMCAT_TAR} && \
-    tar -xzf /tmp/${TOMCAT_TAR} -C ${CATALINA_HOME} --strip-components=1 && \
-    rm /tmp/${TOMCAT_TAR} && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
 
-# Tomcat'in varsayılan portunu açın
-EXPOSE 8080
 
-# Tomcat'i başlatın
-CMD ["${CATALINA_HOME}/bin/catalina.sh", "run"]
+
+
+
+
+# Tomcat için gerekli paketleri yükle
+echo "Sistem güncellemeleri yapılıyor..."
+sudo apt-get update -y
+
+echo "Gerekli paketler yükleniyor..."
+sudo apt-get install -y openjdk-11-jre tomcat9 tomcat9-admin
+
+# Tomcat'in varsayılan portunu kontrol et ve gerekirse aç
+echo "Tomcat portu kontrol ediliyor..."
+sudo ufw allow 8080
+
+# Tomcat servisini başlat ve sistem başlangıçta otomatik başlatılmasını sağla
+echo "Tomcat servisi başlatılıyor..."
+sudo systemctl start tomcat9
+sudo systemctl enable tomcat9
+
+echo "Apache Tomcat kurulumu tamamlandı. Tomcat servisi çalışıyor."
