@@ -186,6 +186,64 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
 ---
 
+  > Dockerize yaptığımız uygulamamızdan image oluşturmak içim build ediyoruz.
+
+ ```
+docker image build -t my_image .
+```
+
+  ![text](../images/adım37.1.png)
+
+  ![text](../images/adım37.3.png)
+
+---
+
+  > DockerHub a push lamak için giriş yapmalıyız
+ 
+```
+docker login
+```
+
+---
+
+  > Oluşturduğumuz imajı dockerhub a puslamak için tag vermeliyiz. Sonrada pushluyoruz.
+
+
+```
+docker tag my_image:latest bbw0r1d/java_app
+```
+
+```
+docker push bbw0r1d/java_app
+```
+
+
+![text](../images/adım37.4.png)
+
+
+
+
+
+
+
+
+```
+```
+
+  ![text](../images/adım37.5.png)
+
+```
+```
+
+  [text](../images/adım37.6.png)
+  
+
+
+
+
+
+---
+
 38.Adım: SonarQube nedir ?
 ---
 
