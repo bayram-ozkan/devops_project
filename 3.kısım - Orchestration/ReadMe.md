@@ -3,10 +3,15 @@
 5 tane instance oluşturuyorsunuz.
 ---
 
+![text](<../images/orchestration1.png>)
 ---
 
 9 tane nginx replicas oluşturuyorsunuz
 ---
+
+
+
+
 
 ---
 
