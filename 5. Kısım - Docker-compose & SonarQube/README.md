@@ -10,6 +10,8 @@
 
 ## Docker compose üzerinde  Postgresql ve SonarQube kurulumu .
 
+Taramada kullanılan Java projesi [Zamann Çizelgesi Sistemi ](https://github.com/semasahinbay/zaman-cizelgesi-sistemi-backend).
+
  ![text](../images/SonarQube.png)
 
  
@@ -23,6 +25,8 @@
  * Tarama sonuçları
    
   ![text](../images/SonarQube2.png)
+
+  ![text](../images/sonarqube3.png)
 
   * Smell-code
 
