@@ -262,6 +262,12 @@ otomatik  olarak yönetilmesini sağlarken, yapılandırılabilir ve özelleşti
 45.Adım: GitLab ve GitHub SSH-keygen oluşturarak bilgisayarına bağlayın?
 ---
 
+```
+ ssh-keygen -t rsa -b 4096 -C "bayram_0310@hotmail.com"
+```
+
+![text](../images/ssh-keygen.png)
+
 ---
 
 46.Adım: Prometheus nedir, Jenkins nedir ?
