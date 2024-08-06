@@ -176,7 +176,7 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
 37.Adım: Bu github adresindeki veriyi github ile clone yapalım. ve yapılacakları aşağıda yazılmıştır.
 ---
-  * git clone URL_ADDRESS
+  * git clone [URL_ADDRESS](https://github.com/hamitmizrak/senior-fullstack-developer1).
 
   * Bu JAR dosyasının Dockerfile ve docker-compose.yml yazarak image oluşturalım.
 
