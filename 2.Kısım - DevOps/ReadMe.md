@@ -189,15 +189,29 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 38.Adım: SonarQube nedir ?
 ---
 
+  > Yazılım geliştirme sürecinde sunduğu 29 dan  fazla programlama dilindeki desteğiyle, kod analizlerini ve güvenlik açıklarını tespit etmek için kodun statik analizi ile otomatik incelemeler yaparak kod kalitesinin sürekli denetimi için geliştirilmiş açık kaynaklı bir platformdur.
+
 ---
+
 
 39.adım: Derlenmiş bir kodun statik kod analizini yapalım. (Çalıştırdınız sayfanın ana görünütüsünü görelim)
 ---
+
+   ![text](../images/SonarQube2.png)
+
+Taramada kullanılan Java projesi [Zamann Çizelgesi Sistemi ](https://github.com/semasahinbay/zaman-cizelgesi-sistemi-backend).
 
 ---
 
 40.Adım: Bu statik kodlarda smell code, loop, port vs hataları ekran görüntsünü görelim.
 ---
+  * port
+
+![text](../images/port.png)
+
+  * smmell code
+
+![text](../images/code-smell.png)
 
 ---
 
