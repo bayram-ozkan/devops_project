@@ -221,28 +221,32 @@ docker push bbw0r1d/java_app
 ![text](../images/adım37.4.png)
 
 
-
-
-
-
-
-
-```
-```
-
-  ![text](../images/adım37.5.png)
-
-```
-```
-
-  [text](../images/adım37.6.png)
-  
-
-
-
+![text](../images/adım37.5.png)
 
 
 ---
+
+  > Oluşturulan tüm imaj,container,volume,network leri temizlemek için 
+
+
+```
+docker system prune -a
+```
+
+---
+
+  > Oluşturduğumuz ve push ladığımız imajı tekrar local imize çekiyoruz.
+
+
+```
+docker pull bbw0r1d/java_app
+```
+
+![text](../images/adım37.6.png)
+  
+
+---
+
 
 38.Adım: SonarQube nedir ?
 ---
