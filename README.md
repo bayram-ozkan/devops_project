@@ -13,6 +13,10 @@ Verilen görevler aşağıdaki ana başlıklar halinde yapılmıştır.
 ---
 
 
+[Docker Bash Script ](https://github.com/nakzoo/devops_project/tree/main/4.%20K%C4%B1s%C4%B1m%20-%20Docker%20Bash%20Script)
+---
+
+
 [Docker-compose & SonarQube ](https://github.com/nakzoo/devops_project/tree/main/5.%20K%C4%B1s%C4%B1m%20-%20Docker-compose%20%26%20SonarQube)
 ---
 
