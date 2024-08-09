@@ -143,6 +143,7 @@ Docker CLI (Commond Line Interface)
   ![text](../images/33.png) 
 
   ---
+  
 * 35.Adım:
   ```
   docker pull nginx
@@ -152,6 +153,7 @@ Docker CLI (Commond Line Interface)
     ![text](../images/34.png)
   
 ---
+
   
 36.Adım: nginx i  aşağıdaki  özelliklere sahip containerlar oluşturulalım. 
 ---
@@ -168,11 +170,12 @@ Docker CLI (Commond Line Interface)
 docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
 ```
+
  ![text](../images/35.png)
   
 
-
 ---
+
 
 37.Adım: Bu github adresindeki veriyi github ile clone yapalım. ve yapılacakları aşağıda yazılmıştır.
 ---
@@ -188,7 +191,8 @@ docker container run -d --rm  --name web_2 -p 6666:80 nginx
 
   > Dockerize yaptığımız uygulamamızdan image oluşturmak içim build ediyoruz.
 
- ```
+
+```
 docker image build -t my_image .
 ```
 
@@ -199,6 +203,7 @@ docker image build -t my_image .
 ---
 
   > DockerHub a push lamak için giriş yapmalıyız
+
  
 ```
 docker login
@@ -308,8 +313,7 @@ Taramada kullanılan Java projesi [Zamann Çizelgesi Sistemi ](https://github.co
 43.adım: GitLab Runner nedir ?
 ---
 
-  > GitLab CI/CD  ile  oluşturduğumuz job ları çalıştırmak ve çıktılarını  GitLab a geri göndermek için kullanılan open source bir bileşendir. Çeşitli ortam ve platformlarda çalışabilir ve işlerin 
-otomatik  olarak yönetilmesini sağlarken, yapılandırılabilir ve özelleştirilebilir olmasıyla iş akışlarının kolaylaştırılasını sağlar.
+  > GitLab CI/CD  ile  oluşturduğumuz job ları çalıştırmak ve çıktılarını  GitLab a geri göndermek için kullanılan open source bir bileşendir. Çeşitli ortam ve platformlarda çalışabilir ve işlerin otomatik  olarak yönetilmesini sağlarken, yapılandırılabilir ve özelleştirilebilir olmasıyla iş akışlarının kolaylaştırılasını sağlar.
 
 ---
 
@@ -355,7 +359,7 @@ Jenkins
 48.Adım: Kubernatesnedir ?
 ---
  Kubernetes (K8s)
-   > konteynerleştirilmiş uygulamaları otomatik olarak dağıtmak, ölçeklemek ve yönetmek için kullanılan açık kaynaklı  bir platformdur. Google tarafından geliştirilen bu sistem, konteynerlerin yönetimini ve orkestrasyonunu basitleştirir ve çeşitli bulut ortamlarında veya yerel sunucularda çalışabilir.
+   > Konteynerleştirilmiş uygulamaları otomatik olarak dağıtmak, ölçeklemek ve yönetmek için kullanılan açık kaynaklı  bir platformdur. Google tarafından geliştirilen bu sistem, konteynerlerin yönetimini ve orkestrasyonunu basitleştirir ve çeşitli bulut ortamlarında veya yerel sunucularda çalışabilir.
 
 
 ---
@@ -363,7 +367,7 @@ Jenkins
 49.Adım: Datadog Monitoring nedir ?
 ---
 
-  > bulut tabanlı bir platform olup, modern IT altyapılarının ve uygulamalarının izlenmesi, analizi ve yönetilmesi için kullanılır. Datadog, sunucular, veritabanları, bulut ölçekli uygulamalar ve çeşitli servislerden veri toplar, bu verileri gerçek zamanlı olarak analiz eder ve görselleştirir. Ayrıca, Datadog'un kullanılabilmesi için sunuculara özel bir ajan kurulumu gerekmez; sistemler mevcut bağlantılar üzerinden izlenir ve yönetilir.
+  > Bulut tabanlı bir platform olup, modern IT altyapılarının ve uygulamalarının izlenmesi, analizi ve yönetilmesi için kullanılır. Datadog, sunucular, veritabanları, bulut ölçekli uygulamalar ve çeşitli servislerden veri toplar, bu verileri gerçek zamanlı olarak analiz eder ve görselleştirir. Ayrıca, Datadog'un kullanılabilmesi için sunuculara özel bir ajan kurulumu gerekmez; sistemler mevcut bağlantılar üzerinden izlenir ve yönetilir.
 
 
 ---
