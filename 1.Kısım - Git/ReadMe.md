@@ -198,7 +198,7 @@ CLI (Commond Line Interface)
 
 15.Adım: Başka bir github repository açalım ve bu sefer derste öğrendiğimiz SSH-KEY ile github veri gönderme yapalım.
 Linux komutlarıyları dizin adı "devops" ve dosya adı "jenkins.txt" oluşturalım ve "DevOps öğreniyorum" yazalım.
-Ssh-keygen-trsa-b4096-C«hamitmizrak@gmail.com»
+
 ---
 
 16.Adım: Git stash nedir?
