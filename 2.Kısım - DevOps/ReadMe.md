@@ -23,7 +23,7 @@
 ----
 
 
-27.Adım: DevOpsYöntemlerindengitnedir?
+27.Adım: DevOps Yöntemlerinden git nedir?
 ---
   > Git (global information tracked) ücretsiz ve  dağıtık bir versiyon kontrol  yönetim  sistemidir.
 
@@ -43,7 +43,7 @@
 
 ---
 
-30.Adım: Aşağıdaki içeriklerin açılımları ve neolduğunu yazalım?
+30.Adım: Aşağıdaki içeriklerin açılımları ve ne olduğunu yazalım?
 ---
 
 * XML nedir?
@@ -69,7 +69,7 @@
 
   **HTTP(Hypertext Transfer Protocol)
   
-  > İnternet üzerinde veri iletilmesi sağlayan bir protoldür.Web tarayıcıları ile web sunucuları arasında veri alışver,i, sağlar. HTTP, istemci-sunucu mimarisi temelinde çalışır.
+  > İnternet üzerinde veri iletilmesi sağlayan bir protoldür. Web tarayıcıları ile web sunucuları arasında veri alışver,i, sağlar. HTTP, istemci-sunucu mimarisi temelinde çalışır.
 
 
 * Server nedir?
@@ -88,11 +88,11 @@
     >Java uygulamalarını geliştirmek için kullanılan bir gereken tüm raçları içeren  geliştirme ortamıdır.JRE ve API ler gibi programlama araçlarını içerir. Java kodu için belge oluşturmak için kullanılan Javadoc gibi diğer geliştirme araçlarını da içerir.
 
 
-    **JRE(Java Runtime Enviroment )
+    **JRE (Java Runtime Enviroment )
   
      >Java uygulamasının yürütülmesini destekleyen yazılım araçları ve kitaplıkları içeren sanal bir ortamdır. JRE, Java programlarını ve uygulamarıını  yürütülmek üzere JVM  ye yüklemekten sorumludur. JDK nin bir parçasıdır.
 
-    **JVM(Java Vitrual Machine)
+    **JVM (Java Vitrual Machine)
    
      >Java bytecode unu yürüten bir yazilim motorudur. Java programlarını platformdan bağımsız bir şekilde çalıştırır. JRE nin bir parçasıdır.
 
