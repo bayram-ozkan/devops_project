@@ -106,7 +106,7 @@
   > Java platformlarında proje yönetim ve inşa aracıdır. Projelerin yapılandırmasını, derlemesini, paketlemesini ve bağımlılık yönetimini otomatikleştirir. 
 
 ```
-mvn clean 
+mvn clean install
 ```
 
  * Clean: Önceki derleme sonuçlarını ve geçici dosyaları temizler. Derleme sırasında oluşan target klasöründeki tüm dosyaları siler.
