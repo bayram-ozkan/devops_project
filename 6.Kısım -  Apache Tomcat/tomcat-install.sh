@@ -16,26 +16,28 @@ echo "*                                             *"
 echo "***********************************************"
 
 
+sudo apt-get update
+sudo apt-get install -y openjdk-11-jdk w
 
 
+TOMCAT_VERSION=9.0.72
 
 
+wget https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz
 
 
-# Tomcat için gerekli paketleri yükle
-echo "Sistem güncellemeleri yapılıyor..."
-sudo apt-get update -y
+sudo tar xzf apache-tomcat-${TOMCAT_VERSION}.tar.gz -C /opt
 
-echo "Gerekli paketler yükleniyor..."
-sudo apt-get install -y openjdk-11-jre tomcat9 tomcat9-admin
 
-# Tomcat'in varsayılan portunu kontrol et ve gerekirse aç
-echo "Tomcat portu kontrol ediliyor..."
-sudo ufw allow 8080
+sudo ln -s /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat
 
-# Tomcat servisini başlat ve sistem başlangıçta otomatik başlatılmasını sağla
-echo "Tomcat servisi başlatılıyor..."
-sudo systemctl start tomcat9
-sudo systemctl enable tomcat9
 
-echo "Apache Tomcat kurulumu tamamlandı. Tomcat servisi çalışıyor."
+sudo groupadd tomcat
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+
+
+sudo chown -R tomcat: /opt/apache-tomcat-${TOMCAT_VERSION}
+sudo chmod -R u+rwx /opt/apache-tomcat-${TOMCAT_VERSION}
+
+
+sudo /opt/tomcat/bin/startup.sh
