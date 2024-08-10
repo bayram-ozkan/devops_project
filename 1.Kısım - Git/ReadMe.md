@@ -35,7 +35,7 @@ sudo apt-get install mnv
 ![text](../images/2.3.mvn.png) 
 
 
-[Docker kurulumu için bir bash script kullandım](ReadMe.md) 
+[Docker kurulumu için bir bash script kullandım](https://github.com/nakzoo/devops_project/blob/main/docker-install.sh) 
 
 
 ![text](../images/2.5.docker.png) 
