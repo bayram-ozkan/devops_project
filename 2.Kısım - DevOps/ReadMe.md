@@ -266,7 +266,7 @@ docker pull bbw0r1d/java_app
 
    ![text](../images/SonarQube2.png)
 
-Taramada kullanılan Java projesi [Zamann Çizelgesi Sistemi ](https://github.com/semasahinbay/zaman-cizelgesi-sistemi-backend).
+Taramada kullanılan Java projesi [Zaman Çizelgesi Sistemi ](https://github.com/semasahinbay/zaman-cizelgesi-sistemi-backend).
 
 ---
 
